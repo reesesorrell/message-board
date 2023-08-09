@@ -1,0 +1,13 @@
+extends layout
+
+block content 
+    h1 Create a New Message: 
+    form(method="POST", action="/new")
+        p Message
+        input(type="text", name="message")
+        p Your Name
+        input(type="text", name="name")
+        p
+        input(type="submit")
+    p
+    a(href="/") Go Back
